@@ -1,0 +1,18 @@
+
+[
+  {
+    "nombre": "José Gregorio Hernández",
+    "ocupacion": "Médico y científico",
+    "descripcion": "Reconocido por sus aportes a la medicina y su labor humanitaria."
+  },
+  {
+    "nombre": "María Martínez",
+    "ocupacion": "Enfermera",
+    "descripcion": "Asistente en investigaciones clínicas."
+  },
+  {
+    "nombre": "Carlos Pérez",
+    "ocupacion": "Estudiante de medicina",
+    "descripcion": "Estudia la obra de J.G. Hernández."
+  }
+]
