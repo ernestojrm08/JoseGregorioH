@@ -1,5 +1,7 @@
 /* style.css */
 
+/* Integrante 1 */
+
 :root {
   --color-bg: #f3f3f3;
   --color-accent: #3366cc;
@@ -102,4 +104,61 @@ footer {
   object-position: center; /* Recorta visualmente si excede */
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Integrante 2 */
+
+.formulario-seccion {
+  background-color: var(--color-light);
+  padding: 20px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px; 
+  width: 90%; 
+}
+
+#registroForm input[type="text"],
+#registroForm input[type="email"],
+#registroForm input[type="number"],
+#registroForm input[type="date"],
+#registroForm input[type="file"] {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+#registroForm button {
+  padding: 10px 20px;
+  background-color: var(--color-accent);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#registroForm button:hover {
+  background-color: #264f9e;
+}
+
+#mensaje {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+
+.boton-ir-registro {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: var(--color-accent);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.boton-ir-registro:hover {
+  background-color: #264f9e;
 }

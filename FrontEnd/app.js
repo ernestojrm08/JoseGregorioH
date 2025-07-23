@@ -4,6 +4,9 @@ import { mostrarLoader, ocultarLoader } from './componentes/loader.js';
 const searchInput = document.getElementById('searchInput');
 const resultadosContainer = document.getElementById('resultados');
 const loader = document.getElementById('loader');
+const form = document.getElementById('registroForm');
+const mensaje = document.getElementById('mensaje');
+
 
 // Evento: al escribir en el buscador
 searchInput.addEventListener('input', async (e) => {
@@ -40,4 +43,27 @@ searchInput.addEventListener('input', async (e) => {
   }
 
   ocultarLoader(loader);
+});
+
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+
+  try {
+    const res = await fetch('http://localhost:3000/registrar', {
+      method: 'POST',
+      body: formData
+    });
+
+    const data = await res.json();
+    mensaje.textContent = data.message;
+    mensaje.style.color = 'green';
+    form.reset();
+  } catch (err) {
+    console.error(err);
+    mensaje.textContent = 'Ocurrió un error al registrar.';
+    mensaje.style.color = 'red';
+  }
 });
