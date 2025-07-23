@@ -1,0 +1,37 @@
+<!-- registro.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro de Usuario</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Registro - Cátedra Dr. José Gregorio Hernández</h1>
+  </header>
+
+  <main class="formulario-seccion">
+    <h2>Registro de Usuario</h2>
+    <form id="registroForm" enctype="multipart/form-data">
+      <label>Email: <input type="email" name="email" required /></label><br />
+      <label>Edad: <input type="number" name="edad" min="18" max="100" required /></label><br />
+      <label>Fecha de Nacimiento: <input type="date" name="fecha" required /></label><br />
+      <label>Género:
+        <input type="radio" name="genero" value="femenino" required /> Femenino
+        <input type="radio" name="genero" value="masculino" /> Masculino
+      </label><br />
+      <label>Foto: <input type="file" name="foto" accept="image/*" required /></label><br />
+      <button type="submit">Enviar Registro</button>
+    </form>
+    <div id="mensaje"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cátedra José Gregorio Hernández</p>
+  </footer>
+
+  <script type="module" src="./registro.js"></script>
+</body>
+</html>
